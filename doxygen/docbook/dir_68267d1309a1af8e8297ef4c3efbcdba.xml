@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_68267d1309a1af8e8297ef4c3efbcdba" xml:lang="fr">
+<title>Répertoire de référence de /home/thierry/Sources/Opengl/Lesson06/src</title>
+<indexterm><primary>Répertoire de référence de /home/thierry/Sources/Opengl/Lesson06/src</primary></indexterm>
+<simplesect>
+    <title>Fichiers    </title>
+        <itemizedlist>
+            <listitem><para>fichier <link linkend="_lesson06_8c">lesson06.c</link></para>
+
+<para>Ouvre une simple fenêtre Wayland on Linux et dessine un cube en rotation dont les faces proviennent d&apos;une texture stockée dans un fichier BMP avec OpenGL + glut. </para>
+</listitem>
+            <listitem><para>fichier <link linkend="_logger_8c">logger.c</link></para>
+
+<para>Ajout de fonction de &quot;logging&quot; (traces dans un fichier texte log.txt) uniquement en mode Debug et avec des niveaux de tracing d�finis dans une variable d&apos;environnement (LEVEL) </para>
+</listitem>
+            <listitem><para>fichier <link linkend="_logger_8h">logger.h</link></para>
+
+<para>Header de l&apos;ajout de fonction de &quot;logging&quot; (traces dans un fichier texte log.txt) uniquement en mode Debug et avec des niveaux de tracing d�finis dans une variable d&apos;environnement (LEVEL) </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>
