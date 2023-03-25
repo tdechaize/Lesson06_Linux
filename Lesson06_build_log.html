@@ -1,0 +1,232 @@
+<html>
+<head>
+<title>lesson06 build log</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+<tt>
+Build started on: <u>25-03-2023 at 15:34.47</u><br />
+Build ended on: <u>25-03-2023 at 15:34.49</u><p />
+<b>-------------- Build: GNUC 32b Debug in lesson06 (compiler: GNU GCC Compiler 32b)---------------</b><br />
+gcc -Wall -g -D_DEBUG -DDEBUG -m32 -I/usr/include -c /home/thierry/Sources/Opengl/Lesson06/src/lesson06.c -o objgcc32/Debug/src/lesson06.o<br />
+gcc -Wall -g -D_DEBUG -DDEBUG -m32 -I/usr/include -c /home/thierry/Sources/Opengl/Lesson06/src/logger.c -o objgcc32/Debug/src/logger.o<br />
+/home/thierry/Sources/Opengl/Lesson06/src/lesson06.c: In function ‘LoadGLTextures’:<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson06/src/lesson06.c:247:22: warning: pointer targets in passing argument 2 of ‘glGenTextures’ differ in signedness [-Wpointer-sign]</font><br />
+  247 |     glGenTextures(1, &amp;texture[0]);<br />
+      |                      ^~~~~~~~~~~<br />
+      |                      |<br />
+      |                      int *<br />
+In file included from /usr/include/GL/freeglut_std.h:128,<br />
+                 from /usr/include/GL/glut.h:17,<br />
+                 from /home/thierry/Sources/Opengl/Lesson06/src/lesson06.c:67:<br />
+/usr/include/GL/gl.h:1302:57: note: expected ‘GLuint *’ {aka ‘unsigned int *’} but argument is of type ‘int *’<br />
+ 1302 | GLAPI void GLAPIENTRY glGenTextures( GLsizei n, GLuint *textures );<br />
+      |                                                 ~~~~~~~~^~~~~~~~<br />
+gcc -L/usr/lib/i386-linux-gnu -o bingcc32/Debug/lesson06.exe objgcc32/Debug/src/lesson06.o objgcc32/Debug/src/logger.o  -m32  -lGL -lglut -lGLU -lm<br />
+Output file is bingcc32/Debug/lesson06.exe with size 30,16 KB<br />
+<b>-------------- Build: GNUC 32b Release in lesson06 (compiler: GNU GCC Compiler 32b)---------------</b><br />
+gcc -Wall -m32 -DNDEBUG -m32 -I/usr/include -c /home/thierry/Sources/Opengl/Lesson06/src/lesson06.c -o objgcc32/Release/src/lesson06.o<br />
+gcc -Wall -m32 -DNDEBUG -m32 -I/usr/include -c /home/thierry/Sources/Opengl/Lesson06/src/logger.c -o objgcc32/Release/src/logger.o<br />
+/home/thierry/Sources/Opengl/Lesson06/src/lesson06.c: In function ‘LoadGLTextures’:<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson06/src/lesson06.c:247:22: warning: pointer targets in passing argument 2 of ‘glGenTextures’ differ in signedness [-Wpointer-sign]</font><br />
+  247 |     glGenTextures(1, &amp;texture[0]);<br />
+      |                      ^~~~~~~~~~~<br />
+      |                      |<br />
+      |                      int *<br />
+In file included from /usr/include/GL/freeglut_std.h:128,<br />
+                 from /usr/include/GL/glut.h:17,<br />
+                 from /home/thierry/Sources/Opengl/Lesson06/src/lesson06.c:67:<br />
+/usr/include/GL/gl.h:1302:57: note: expected ‘GLuint *’ {aka ‘unsigned int *’} but argument is of type ‘int *’<br />
+ 1302 | GLAPI void GLAPIENTRY glGenTextures( GLsizei n, GLuint *textures );<br />
+      |                                                 ~~~~~~~~^~~~~~~~<br />
+gcc -L/usr/lib/i386-linux-gnu -o bingcc32/Release/lesson06.exe objgcc32/Release/src/lesson06.o objgcc32/Release/src/logger.o  -m32 -m32  -lGL -lglut -lGLU -lm<br />
+Output file is bingcc32/Release/lesson06.exe with size 20,70 KB<br />
+<b>-------------- Build: GNUC 64b Debug in lesson06 (compiler: GNU GCC Compiler)---------------</b><br />
+gcc -Wall -g -D_DEBUG -DDEBUG -m64 -I/usr/include -c /home/thierry/Sources/Opengl/Lesson06/src/lesson06.c -o objgcc64/Debug/src/lesson06.o<br />
+gcc -Wall -g -D_DEBUG -DDEBUG -m64 -I/usr/include -c /home/thierry/Sources/Opengl/Lesson06/src/logger.c -o objgcc64/Debug/src/logger.o<br />
+/home/thierry/Sources/Opengl/Lesson06/src/lesson06.c: In function ‘LoadGLTextures’:<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson06/src/lesson06.c:247:22: warning: pointer targets in passing argument 2 of ‘glGenTextures’ differ in signedness [-Wpointer-sign]</font><br />
+  247 |     glGenTextures(1, &amp;texture[0]);<br />
+      |                      ^~~~~~~~~~~<br />
+      |                      |<br />
+      |                      int *<br />
+In file included from /usr/include/GL/freeglut_std.h:128,<br />
+                 from /usr/include/GL/glut.h:17,<br />
+                 from /home/thierry/Sources/Opengl/Lesson06/src/lesson06.c:67:<br />
+/usr/include/GL/gl.h:1302:57: note: expected ‘GLuint *’ {aka ‘unsigned int *’} but argument is of type ‘int *’<br />
+ 1302 | GLAPI void GLAPIENTRY glGenTextures( GLsizei n, GLuint *textures );<br />
+      |                                                 ~~~~~~~~^~~~~~~~<br />
+gcc -L/usr/lib/x86_64-linux-gnu -o bingcc64/Debug/lesson06.exe objgcc64/Debug/src/lesson06.o objgcc64/Debug/src/logger.o  -m64  -lGL -lglut -lGLU -lm<br />
+Output file is bingcc64/Debug/lesson06.exe with size 36,23 KB<br />
+<b>-------------- Build: GNUC 64b Release in lesson06 (compiler: GNU GCC Compiler)---------------</b><br />
+gcc -Wall -O2 -DNDEBUG -m64 -I/usr/include -c /home/thierry/Sources/Opengl/Lesson06/src/lesson06.c -o objgcc64/Release/src/lesson06.o<br />
+gcc -Wall -O2 -DNDEBUG -m64 -I/usr/include -c /home/thierry/Sources/Opengl/Lesson06/src/logger.c -o objgcc64/Release/src/logger.o<br />
+/home/thierry/Sources/Opengl/Lesson06/src/lesson06.c: In function ‘LoadGLTextures’:<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson06/src/lesson06.c:247:22: warning: pointer targets in passing argument 2 of ‘glGenTextures’ differ in signedness [-Wpointer-sign]</font><br />
+  247 |     glGenTextures(1, &amp;texture[0]);<br />
+      |                      ^~~~~~~~~~~<br />
+      |                      |<br />
+      |                      int *<br />
+In file included from /usr/include/GL/freeglut_std.h:128,<br />
+                 from /usr/include/GL/glut.h:17,<br />
+                 from /home/thierry/Sources/Opengl/Lesson06/src/lesson06.c:67:<br />
+/usr/include/GL/gl.h:1302:57: note: expected ‘GLuint *’ {aka ‘unsigned int *’} but argument is of type ‘int *’<br />
+ 1302 | GLAPI void GLAPIENTRY glGenTextures( GLsizei n, GLuint *textures );<br />
+      |                                                 ~~~~~~~~^~~~~~~~<br />
+gcc -L/usr/lib/x86_64-linux-gnu -o bingcc64/Release/lesson06.exe objgcc64/Release/src/lesson06.o objgcc64/Release/src/logger.o  -s -m64  -lGL -lglut -lGLU -lm<br />
+Output file is bingcc64/Release/lesson06.exe with size 22,13 KB<br />
+<b>-------------- Build: CLANG 32b Debug in lesson06 (compiler: LLVM Clang Compiler 32b)---------------</b><br />
+clang -Wall -O0 -D_DEBUG -DDEBUG --target=i686-pc-linux-gnu -I/usr/lib/clang/14.0.6/include -c /home/thierry/Sources/Opengl/Lesson06/src/lesson06.c -o objclang32/Debug/src/lesson06.o<br />
+clang -Wall -O0 -D_DEBUG -DDEBUG --target=i686-pc-linux-gnu -I/usr/lib/clang/14.0.6/include -c /home/thierry/Sources/Opengl/Lesson06/src/logger.c -o objclang32/Debug/src/logger.o<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson06/src/lesson06.c:247:22: warning: passing 'int *' to parameter of type 'GLuint *' (aka 'unsigned int *') converts between pointers to integer types with different sign [-Wpointer-sign]</font><br />
+    glGenTextures(1, &amp;texture[0]);<br />
+                     ^~~~~~~~~~~<br />
+/usr/include/GL/gl.h:1302:57: note: passing argument to parameter 'textures' here<br />
+GLAPI void GLAPIENTRY glGenTextures( GLsizei n, GLuint *textures );<br />
+                                                        ^<br />
+1 warning generated.<br />
+clang -L/usr/lib/clang/14.0.6/lib/linux -o binclang32/Debug/lesson06.exe objclang32/Debug/src/lesson06.o objclang32/Debug/src/logger.o  --target=i686-pc-linux-gnu  -lGL -lglut -lGLU -lm<br />
+Output file is binclang32/Debug/lesson06.exe with size 20,98 KB<br />
+<b>-------------- Build: CLANG 32b Release in lesson06 (compiler: LLVM Clang Compiler 32b)---------------</b><br />
+clang -Wall -O2 -DNDEBUG --target=i686-pc-linux-gnu -I/usr/lib/clang/14.0.6/include -c /home/thierry/Sources/Opengl/Lesson06/src/lesson06.c -o objclang32/Release/src/lesson06.o<br />
+clang -Wall -O2 -DNDEBUG --target=i686-pc-linux-gnu -I/usr/lib/clang/14.0.6/include -c /home/thierry/Sources/Opengl/Lesson06/src/logger.c -o objclang32/Release/src/logger.o<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson06/src/lesson06.c:247:22: warning: passing 'int *' to parameter of type 'GLuint *' (aka 'unsigned int *') converts between pointers to integer types with different sign [-Wpointer-sign]</font><br />
+    glGenTextures(1, &amp;texture[0]);<br />
+                     ^~~~~~~~~~~<br />
+/usr/include/GL/gl.h:1302:57: note: passing argument to parameter 'textures' here<br />
+GLAPI void GLAPIENTRY glGenTextures( GLsizei n, GLuint *textures );<br />
+                                                        ^<br />
+1 warning generated.<br />
+clang -L/usr/lib/clang/14.0.6/lib/linux -o binclang32/Release/lesson06.exe objclang32/Release/src/lesson06.o objclang32/Release/src/logger.o  -s --target=i686-pc-linux-gnu  -lGL -lglut -lGLU -lm<br />
+Output file is binclang32/Release/lesson06.exe with size 17,69 KB<br />
+<b>-------------- Build: CLANG 64b Debug in lesson06 (compiler: LLVM Clang Compiler)---------------</b><br />
+clang -Wall -O0 -D_DEBUG -DDEBUG --target=x86_64-pc-linux-gnu -I/usr/lib/clang/14.0.6/include -c /home/thierry/Sources/Opengl/Lesson06/src/lesson06.c -o objclang64/Debug/src/lesson06.o<br />
+clang -Wall -O0 -D_DEBUG -DDEBUG --target=x86_64-pc-linux-gnu -I/usr/lib/clang/14.0.6/include -c /home/thierry/Sources/Opengl/Lesson06/src/logger.c -o objclang64/Debug/src/logger.o<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson06/src/lesson06.c:247:22: warning: passing 'int *' to parameter of type 'GLuint *' (aka 'unsigned int *') converts between pointers to integer types with different sign [-Wpointer-sign]</font><br />
+    glGenTextures(1, &amp;texture[0]);<br />
+                     ^~~~~~~~~~~<br />
+/usr/include/GL/gl.h:1302:57: note: passing argument to parameter 'textures' here<br />
+GLAPI void GLAPIENTRY glGenTextures( GLsizei n, GLuint *textures );<br />
+                                                        ^<br />
+1 warning generated.<br />
+clang -L/usr/lib/clang/14.0.6/lib/linux -o binclang64/Debug/lesson06.exe objclang64/Debug/src/lesson06.o objclang64/Debug/src/logger.o  --target=x86_64-pc-linux-gnu  -lGL -lglut -lGLU -lm<br />
+Output file is binclang64/Debug/lesson06.exe with size 26,80 KB<br />
+<b>-------------- Build: CLANG 64b Release in lesson06 (compiler: LLVM Clang Compiler)---------------</b><br />
+clang -Wall -O2 -DNDEBUG --target=x86_64-pc-linux-gnu -I/usr/lib/clang/14.0.6/include -c /home/thierry/Sources/Opengl/Lesson06/src/lesson06.c -o objclang64/Release/src/lesson06.o<br />
+clang -Wall -O2 -DNDEBUG --target=x86_64-pc-linux-gnu -I/usr/lib/clang/14.0.6/include -c /home/thierry/Sources/Opengl/Lesson06/src/logger.c -o objclang64/Release/src/logger.o<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson06/src/lesson06.c:247:22: warning: passing 'int *' to parameter of type 'GLuint *' (aka 'unsigned int *') converts between pointers to integer types with different sign [-Wpointer-sign]</font><br />
+    glGenTextures(1, &amp;texture[0]);<br />
+                     ^~~~~~~~~~~<br />
+/usr/include/GL/gl.h:1302:57: note: passing argument to parameter 'textures' here<br />
+GLAPI void GLAPIENTRY glGenTextures( GLsizei n, GLuint *textures );<br />
+                                                        ^<br />
+1 warning generated.<br />
+clang -L/usr/lib/clang/14.0.6/lib/linux -o binclang64/Release/lesson06.exe objclang64/Release/src/lesson06.o objclang64/Release/src/logger.o  -s --target=x86_64-pc-linux-gnu  -lGL -lglut -lGLU -lm<br />
+Output file is binclang64/Release/lesson06.exe with size 22,68 KB<br />
+<b>-------------- Build: Archive in lesson06 (compiler: GNU GCC Compiler)---------------</b><br />
+rm --interactive=never *.7z || true<br />
+rm --interactive=never *.tar || true<br />
+rm: impossible de supprimer '*.tar': Aucun fichier ou dossier de ce type<br />
+python3 /home/thierry/Sources/tools/Size_exec.py lesson06<br />
+        Tableau récapitulatif de la taille des exécutables générés pour le projet : lesson06<br />
+  Debug GCC 32b     :  30.2 KB et sa date dernière modification Sat Mar 25 15:34:48 2023 -&gt; ./bingcc32/Debug/lesson06.exe.<br />
+  Release GCC 32b   :  20.7 KB et sa date dernière modification Sat Mar 25 15:34:48 2023 -&gt; ./bingcc32/Release/lesson06.exe.<br />
+  Debug GCC 64b     :  36.2 KB et sa date dernière modification Sat Mar 25 15:34:48 2023 -&gt; ./bingcc64/Debug/lesson06.exe.<br />
+  Release GCC 64b   :  22.1 KB et sa date dernière modification Sat Mar 25 15:34:48 2023 -&gt; ./bingcc64/Release/lesson06.exe.<br />
+  Debug CLANG 32b   :  21.0 KB et sa date dernière modification Sat Mar 25 15:34:48 2023 -&gt; ./binclang32/Debug/lesson06.exe.<br />
+  Release CLANG 32b :  17.7 KB et sa date dernière modification Sat Mar 25 15:34:48 2023 -&gt; ./binclang32/Release/lesson06.exe.<br />
+  Debug CLANG 64b   :  26.8 KB et sa date dernière modification Sat Mar 25 15:34:48 2023 -&gt; ./binclang64/Debug/lesson06.exe.<br />
+  Release CLANG 64b :  22.7 KB et sa date dernière modification Sat Mar 25 15:34:48 2023 -&gt; ./binclang64/Release/lesson06.exe.<br />
+python3 /home/thierry/Sources/tools/Calc_checksums.py lesson06<br />
+Tableau récapitulatif des différents checksums générés pour le projet : lesson06<br />
+Calcul des cheksums du fichier : ./bingcc32/Debug/lesson06.exe.<br />
+Checksum CRC32  is 2bef9e76.<br />
+Checksum MD5 is 28c57a62e83c2fb145459128f9d8ffbe.<br />
+Checksum SHA256 is 7248233c8ab0bc5e0d3a6dc75da74af82bb56a911020ab7764cefd8f7f55ba48.<br />
+Checksum SHA512 is 8d3c162208ac85344cf5f7d7b3251cd87cd933d45853c8dc3dec61e09709239c067c6698df9401c689e3ebb1f97cc605b861894dc158c164aad01bcfd2176baf.<br />
+Checksum RipeMD160 is e339a091a29655884f6dc088fbfd118b9f7a30d8.<br />
+Checksum BLAKE2B is cabe849848ac5d4b04d84b06a8280e890a631a49b39815c49ce0d69095dfea91a29cc91b5d1f59057e36722c473571091ddebb15d3a34cfb4ffc969026c7a76f.<br />
+Calcul des cheksums du fichier : ./bingcc32/Release/lesson06.exe.<br />
+Checksum CRC32  is 91e8ff55.<br />
+Checksum MD5 is 5b40ae5f01c5d4bee87a128718b82407.<br />
+Checksum SHA256 is 98a408ed5f8dc4c25865f66e24e3ee5ccb9fd6abf42e29481f1a64f8c9df7633.<br />
+Checksum SHA512 is c03242690131cfe53e2b3845513fc1063ab30aa2a142ce3000bd2b387897aa45d4d7a8ec07d76c5435b2d20af9da4619a961281ec093d31f495cc2930e53e6b4.<br />
+Checksum RipeMD160 is 5336e6a31a44f7cc3563d9c1bea313563274b77e.<br />
+Checksum BLAKE2B is e26c0896b4f77cad9d4a58ba361f386aed7ff299ebac167fc5361f2641671e04ca6befe67f1349c1b47ef04bf58d66e02ea8c66d0905505ef06d4aa9803d7865.<br />
+Calcul des cheksums du fichier : ./bingcc64/Debug/lesson06.exe.<br />
+Checksum CRC32  is c0a49ea9.<br />
+Checksum MD5 is 82b75f307a2f43ff70b57e58e3f094dd.<br />
+Checksum SHA256 is 940eeb369296c082303776f34f34df3e8e63b5cbd2fec54fe5a5f67e2747bcea.<br />
+Checksum SHA512 is be503de2f854a6059de95cd8d758c53bdd39cbd6e143c79c7507a4b7016160e0b41de3817956292b8faf66891032ce8ba54b6b9fa96447f915ea37fddda94b26.<br />
+Checksum RipeMD160 is 087739af4059e89994fa2b3d9b659a70741cf671.<br />
+Checksum BLAKE2B is 6377374c71d5316f259084fe1e78b8e32ab32e21d7c47c2d925d8918f91e4752327ff1f6bf8ac7f2122ec9d4e4adb337acf0c2459e1f8e5b669f19567a1171f7.<br />
+Calcul des cheksums du fichier : ./bingcc64/Release/lesson06.exe.<br />
+Checksum CRC32  is 34fb01ab.<br />
+Checksum MD5 is a244162aa5c70afc1873262596b2d382.<br />
+Checksum SHA256 is f9267f0384785118d5286d6e8db8a5eaa5ba08872f8ab0c2b44a44b651342d54.<br />
+Checksum SHA512 is 92c993a2a1174fa1973e3cf29336f2eaeb5bdc7f38f313b83329fefe933ccb90eeeddfd77d99fc3fcd3c565b0c526c3606c5a35857da94ad3e822e36a5f90e69.<br />
+Checksum RipeMD160 is abb6149eaef68b87b45ab7c7032580325b96e6fc.<br />
+Checksum BLAKE2B is d8b6b27199938208d5b9148f602f6c123faa0d822eb49e4cb4874b3dde54bd26c75a9e4ba0e51ac7ae60dff803978864b9a09f64add4006cd124355740a0d268.<br />
+Calcul des cheksums du fichier : ./binclang32/Debug/lesson06.exe.<br />
+Checksum CRC32  is 149343a8.<br />
+Checksum MD5 is 2d7b031dcf121ffa5a7cacce57353528.<br />
+Checksum SHA256 is b25fc8c6153a585cad47ec2ceaf70965a63da29f79d62fe55058b9ee86c13ada.<br />
+Checksum SHA512 is 31ae97326501bde75b8a4061c3bcab57696b0368137c2ecb26f04e7f281291964aeb4e9ffc7979dfccc54f89b0eeae2c2c9516fd9a8ff516a1506a9e043658aa.<br />
+Checksum RipeMD160 is c96e6858035049c05cacd005a3f63fd399cd3944.<br />
+Checksum BLAKE2B is e9d6ed42e1cee3b6f5c0086d6f37d275d22a3b8d1fb40bd50bf24d575dfc210477e3203175eb45b02c6ad947edc24721827a879e6778bab7e56518728d84128a.<br />
+Calcul des cheksums du fichier : ./binclang32/Release/lesson06.exe.<br />
+Checksum CRC32  is d332112a.<br />
+Checksum MD5 is f40e9b25b359dd5cb56c26f9da062706.<br />
+Checksum SHA256 is 086ceb0c6a039bf742d25ea41b58f3d46769579fb3ac1c2a3dc7f085fb15e7be.<br />
+Checksum SHA512 is 5c46912c24c7393899521568b863f2fd98296a818511fdb71ddb0307b65965e524e8475ac5c6f17c31a8a0d67cc602f48f9c657dcad508a674d306668a23798a.<br />
+Checksum RipeMD160 is 87ab24a54d9f7bcc2c5752e549a5a2a9fab4fbb6.<br />
+Checksum BLAKE2B is 97d0c9bc655a20e48d268e9e8bb2fd251f20b3c028b8b708cb9b9ee343cc73e458bae32ca8a6c5945dd673d255d55b16878e42ef707f931126c8de03e2de0b1b.<br />
+Calcul des cheksums du fichier : ./binclang64/Debug/lesson06.exe.<br />
+Checksum CRC32  is c6d4e7e9.<br />
+Checksum MD5 is c385dd386b3a24786440f9951f485455.<br />
+Checksum SHA256 is 7e096e9d03ea2df98d4dc3382c7de1fa57300b76380aa50f67273e59b01eda55.<br />
+Checksum SHA512 is 55b32a25647a06be5c2754a6a0403cdcea9c233acda354a69ed54358d6cc9dc3ed9d5276107ab7517058edd12b59ac75cad6a47024c3a17b4b4f7116f68a63cf.<br />
+Checksum RipeMD160 is af583592d7bd6593f575b562d99ea726cacf4ee3.<br />
+Checksum BLAKE2B is ccdf3de6c55c3fe0eb7bde20fa663d42821663df3cd95f28022f2e38a2c26414c2bfbac7c39d2274c98af45aa43ad8070f1cb5934e9df37df059d4326a0451b6.<br />
+Calcul des cheksums du fichier : ./binclang64/Release/lesson06.exe.<br />
+Checksum CRC32  is 7986778b.<br />
+Checksum MD5 is cc6def4b5278465f71c3d8760a9d371d.<br />
+Checksum SHA256 is 287b89adf6599493853bcb440f6483b974359b2fe816f79e2bc440655118c4d8.<br />
+Checksum SHA512 is 6fab033edc034809df4fa93d8a61877859ed889bf93318625b6a71d0da16014093d4ba8fd735352812e3567f4f089c6785a36faa96590c9909802c7270711d5b.<br />
+Checksum RipeMD160 is 8cf1017152aaefd2fc4508d62bccf3e72590c110.<br />
+Checksum BLAKE2B is a083c0f43d58c35ab521a4b9fd5a073f3a50880f1bff6ab54b47b6d5de23186966a4a86a3c0c974f896d87afbd4e360c4242820dee1c359b26c7b709ca1b7f90.<br />
+7z a lesson06_""date +"%Y-%m-%d"""_src.7z src/* res/* data/* build.cmake/* build.shell/* *.bat *.txt *.html *.md doxygen/* doc/* *.cbp *.workspace '-x!*.bak' -mhe=on -p"lesson06_tde@03!"<br />
+7-Zip [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21<br />
+p7zip Version 16.02 (locale=fr_FR.UTF-8,Utf16=on,HugeFiles=on,64 bits,8 CPUs Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz (A0652),ASM,AES-NI)<br />
+Scanning the drive:<br />
+86 folders, 540 files, 2821793 bytes (2756 KiB)<br />
+Creating archive: lesson06_2023-03-25_src.7z<br />
+Items to compress: 626<br />
+Files read from disk: 540<br />
+Archive size: 486441 bytes (476 KiB)<br />
+Everything is Ok<br />
+7z a -ttar lesson06_""date +"%Y-%m-%d"""_all.tar * '-x!*.bak'  '-x!*.7z'<br />
+7-Zip [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21<br />
+p7zip Version 16.02 (locale=fr_FR.UTF-8,Utf16=on,HugeFiles=on,64 bits,8 CPUs Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz (A0652),ASM,AES-NI)<br />
+Scanning the drive:<br />
+127 folders, 635 files, 3614278 bytes (3530 KiB)<br />
+Creating archive: lesson06_2023-03-25_all.tar<br />
+Items to compress: 762<br />
+Files read from disk: 762<br />
+Archive size: 4192768 bytes (4095 KiB)<br />
+Everything is Ok<br />
+7z a lesson06_""date +"%Y-%m-%d"""_all.7z *_all.tar -mhe=on -p"lesson06_tde@03!"<br />
+7-Zip [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21<br />
+p7zip Version 16.02 (locale=fr_FR.UTF-8,Utf16=on,HugeFiles=on,64 bits,8 CPUs Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz (A0652),ASM,AES-NI)<br />
+Scanning the drive:<br />
+1 file, 4192768 bytes (4095 KiB)<br />
+Creating archive: lesson06_2023-03-25_all.7z<br />
+Items to compress: 1<br />
+Files read from disk: 1<br />
+Archive size: 568314 bytes (555 KiB)<br />
+Everything is Ok<br />
+rm --interactive=never *.tar || true<br />
+<font color="#0000ff">Process terminated with status 0 (0 minute(s), 1 second(s))</font><br />
+<font color="#0000ff">0 error(s), 8 warning(s) (0 minute(s), 1 second(s))</font><br />
+</tt>
+</body>
+</html>
